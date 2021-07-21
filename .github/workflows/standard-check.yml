@@ -5,8 +5,8 @@ on:
     tags:
       - 'build*'
   pull_request:
-    branches-ignore:
-      - '!dev'
+    branches:
+      - 'dev'
 
 name: R-CMD-check
 
