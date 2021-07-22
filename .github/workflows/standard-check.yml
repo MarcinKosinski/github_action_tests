@@ -9,7 +9,7 @@ on:
   pull_request:
     branches:
       - main
-   if: ${{contains(github.base_ref, 'dev')}}
+    if: ${{contains(github.base_ref, 'dev')}}
 
 name: R-CMD-check
 
