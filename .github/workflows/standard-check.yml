@@ -6,10 +6,10 @@ on:
   push:
     tags:
       - 'build*'
-  pull_request:
+  pull_request_target:
     branches:
       - main
-    if: ${{contains(github.base_ref, 'dev')}}
+    if: ${{contains(github.ref, 'dev')}}
 
 name: R-CMD-check
 
